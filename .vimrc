@@ -36,6 +36,10 @@ filetype plugin indent on    " required
 " Clear filetype flags before changing runtimepath to force Vim to reload them.
 
 " set syntax highlighting on
+" filetype off
+" filetype plugin indent off
+" set runtimepath+=$GOROOT/misc/vim
+" filetype plugin indent on
 syntax on
 
 " Use vim features
