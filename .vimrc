@@ -42,6 +42,12 @@ filetype plugin indent on    " required
 " filetype plugin indent on
 syntax on
 
+" Allow vim to recognize filetype
+filetype on
+
+" anything ending in a .launch will have html syntax highlighting
+au BufNewFile,BufRead *.launch set filetype=xml
+
 " Use vim features
 set nocompatible
 
@@ -51,15 +57,12 @@ set ruler
 " Show line numbers
 set number
 
-" Allow vim to recognize filetype
-filetype on
-
 " Set colorscheme and font
 colorscheme desert
 set guifont=Consolas\ 14
 
 " Set the correct tab setting
-set tabstop=6 softtabstop=2 shiftwidth=2 noexpandtab
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 " `:set list` to display whitespace chars
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
@@ -68,7 +71,7 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set autoindent
 
 " Automatically wrap words at 79 characters
-set textwidth=79
+" set textwidth=79
 
 " Recognize markdown files.
 au BufRead,BufNewFile *.md set filetype=markdown
