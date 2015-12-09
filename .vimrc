@@ -13,6 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Julia syntax highlighting
 Plugin 'JuliaLang/julia-vim'
 
+" Auto complete paired things
+Plugin 'jiangmiao/auto-pairs'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
@@ -62,7 +65,10 @@ colorscheme desert
 set guifont=Consolas\ 14
 
 " Set the correct tab setting
-set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+set tabstop=2 shiftwidth=2 expandtab
+
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
 " `:set list` to display whitespace chars
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
