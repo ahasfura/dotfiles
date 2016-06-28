@@ -13,8 +13,15 @@ Plugin 'VundleVim/Vundle.vim'
 " Julia syntax highlighting
 Plugin 'JuliaLang/julia-vim'
 
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'elzr/vim-json'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'tpope/vim-commentary'
+
 " Auto complete paired things
-Plugin 'jiangmiao/auto-pairs'
+"Plugin 'jiangmiao/auto-pairs'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -112,3 +119,6 @@ set scrolloff=3
 set cursorline
 
 set backspace=2 " make backspace work like most other apps
+
+set hlsearch
+nnoremap <Space> :noh<CR>

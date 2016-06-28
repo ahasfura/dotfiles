@@ -1,3 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/andres/dotfiles/.vim'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/andreshasfura/workspace/prism/tracking/lib/evaluate'
+let g:netrw_dirhist_2='/Users/andreshasfura/tests/py'
+let g:netrw_dirhist_3='/Users/andreshasfura/workspace/common/clock_ocr/scripts'
+let g:netrw_dirhist_4='/Users/andreshasfura/workspace/prism/tracking/bin'
+let g:netrw_dirhist_5='/Users/andreshasfura/workspace/common/clock_ocr/scripts'
+let g:netrw_dirhist_6='/Users/andreshasfura/Downloads/01840'
+let g:netrw_dirhist_7='/Users/andreshasfura/workspace/prism/tracking/test'
