@@ -84,7 +84,7 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set autoindent
 
 " Automatically wrap words at 79 characters
-" set textwidth=79
+set textwidth=100
 
 " Recognize markdown files.
 au BufRead,BufNewFile *.md set filetype=markdown
@@ -120,5 +120,9 @@ set cursorline
 
 set backspace=2 " make backspace work like most other apps
 
+" Highlight stuff
 set hlsearch
 nnoremap <Space> :noh<CR>
+
+" Run current script map to space bar
+nnoremap <S-j> :!./%<CR>
