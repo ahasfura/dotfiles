@@ -13,6 +13,7 @@ backup () {
   echo "cp -Rp $1 `backup_name $1`;" | bash -x
 }
 
+
 # Install bash.rc.mine.
 installed=$(grep -i -e "source ~/.bashrc.mine" ~/.bashrc)
 if [ -n "$installed" ]; then
@@ -42,3 +43,9 @@ do
     ln -s $(pwd)/$f ~/$f
   fi
 done
+
+FOLDER=~/.vim/bundle/Vundle.vim
+if [ ! -d ${FOLDER} ] ; then
+  git clone https://github.com/VundleVim/Vundle.vim.git ${FOLDER}
+fi
+vim +PluginInstall +qall
