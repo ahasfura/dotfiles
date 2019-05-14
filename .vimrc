@@ -11,11 +11,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Julia syntax highlighting
-Plugin 'JuliaLang/julia-vim'
-
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'scrooloose/syntastic'
 Plugin 'elzr/vim-json'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'tpope/vim-commentary'
