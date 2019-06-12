@@ -71,15 +71,13 @@ set tabstop=2 shiftwidth=2 expandtab
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType cpp setlocal expandtab shiftwidth=4 softtabstop=4
 
 " `:set list` to display whitespace chars
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 " Automatically indent while editing
 set autoindent
-
-" Automatically wrap words at 79 characters
-set textwidth=100
 
 " Recognize markdown files.
 au BufRead,BufNewFile *.md set filetype=markdown
