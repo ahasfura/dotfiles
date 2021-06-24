@@ -119,3 +119,8 @@ nnoremap <Space> :noh<CR>
 
 " Run current script map to space bar
 nnoremap <S-j> :!./%<CR>
+
+" jump to last position
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
